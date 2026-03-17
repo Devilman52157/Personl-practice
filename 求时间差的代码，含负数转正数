@@ -4,9 +4,9 @@ int main()
 	int hour1, minute1;
 	int hour2, minute2;
 
-	printf("ÇëÊäÈëÊ±¼ä:(Ğ¡Ê± ·Ö)");
+	printf("è¯·è¾“å…¥æ—¶é—´:(å°æ—¶ åˆ†)");
 	scanf_s("%d %d", &hour1, &minute1);
-	printf("ÇëÊäÈëÊ±¼ä:(Ğ¡Ê± ·Ö)");
+	printf("è¯·è¾“å…¥æ—¶é—´:(å°æ—¶ åˆ†)");
 	scanf_s("%d %d", &hour2, &minute2);
 
 	int t1 = hour1 * 60 + minute1;
@@ -17,7 +17,7 @@ int main()
 	if (t < 0)
 		t = -t;
 
-	printf("Ê±²îÊÇ%dĞ¡Ê±%d·Ö", t / 60, t % 60);
+	printf("æ—¶å·®æ˜¯%då°æ—¶%dåˆ†", t / 60, t % 60);
 
 	return 0;
 }
