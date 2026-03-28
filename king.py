@@ -69,7 +69,7 @@ def close_all_popups(x_image_path):
                 pyautogui.click(location)
                 close_count += 1
                 print(f"   -> 发现弹窗！已关闭 (累计 {close_count} 个)。")
-                time.sleep(2) # 关掉一个后，停顿2秒看有没有下一个弹出来
+                time.sleep(4) # 关掉一个后，停顿2秒看有没有下一个弹出来
             else:
                 break # 没找到叉叉，立刻打破循环！
         except pyautogui.ImageNotFoundException:
@@ -128,7 +128,7 @@ def main():
     print("步骤 5：搜索好友 杨万琴...")
     click_image('friend_btn.png', wait_time=2)
     click_image('search_box.png', wait_time=3) # 点击搜索框后等3秒，确保光标闪烁
-    paste_text("杨万琴")
+    paste_text("邓才华")
     click_image('search_btn.png', wait_time=2)
 
     # 步骤 6：赠送金币并点击下一次
